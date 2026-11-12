@@ -1,0 +1,52 @@
+# ============================================
+# AgentPay Guard - root .gitignore
+# ============================================
+
+# --- Environment files & secrets ---
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+*.pem
+*.key
+secrets/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Python virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Python cache files ---
+__pycache__/
+*.py[cod]
+*.pyc
+
+# --- Test & type-check caches ---
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- IDE-specific files ---
+.vscode/
+.idea/
+
+# --- OS-generated files ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
