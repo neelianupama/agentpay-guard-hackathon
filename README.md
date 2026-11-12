@@ -285,6 +285,16 @@ npm run test:watch  # watch mode
 
 ---
 
+
+## Live Demo
+
+**Frontend:** https://agentpay-guard-hackathon-1.onrender.com
+
+**Backend Health:** https://agentpay-guard-hackathon.onrender.com/health
+
+The frontend is hosted on Render and connects to the deployed FastAPI backend. PayPal integration uses the Sandbox environment. No real-money transactions are made.
+
+
 ## Known Limitations
 
 | Limitation | Detail |
@@ -294,7 +304,6 @@ npm run test:watch  # watch mode
 | PayPal Sandbox only | Live PayPal URLs are rejected at startup by design. No real money is processed. |
 | INR blocked at PayPal | INR payments pass risk assessment but are blocked before any PayPal call. PayPal Sandbox does not support INR. |
 | No persistence layer | There is no database. Payment records exist only in the running process. |
-| No hosted demo | There is no live demo URL. The application must be run locally. |
 | Single worker | In-memory state is not shared between workers. Do not run multiple Uvicorn workers. |
 
 ---
